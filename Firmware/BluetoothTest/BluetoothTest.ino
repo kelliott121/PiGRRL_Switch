@@ -17,13 +17,6 @@ void setup() {
   Serial.begin(9600);
 
   delay(5000);
-
-  Serial.print("AT+IMME0");
-  delay(1000);
-  Serial.print("AT+ROLE0");
-  delay(1000);
-  Serial.print("AT+TYPE0");
-  delay(1000);
 }
 
 void loop() {
@@ -41,5 +34,5 @@ void loop() {
   Serial.print(digitalRead(X));
   Serial.println(digitalRead(Y));
 
-  delay(1000);
+  delay(10);
 }
